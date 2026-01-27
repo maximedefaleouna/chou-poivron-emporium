@@ -121,12 +121,25 @@ const Header = () => {
               )}
             </nav>
             {/* Desktop Actions */}
-            <div className="hidden lg:flex items-center gap-3">
+            {/* <div className="hidden lg:flex items-center gap-3">
               <Button>
                 <Phone className="h-4 w-4" />
                 Nous Contacter
               </Button>
-            </div>
+            </div> */}
+            <a
+              href="https://wa.me/22892522029?text=salut%20je%20vous%20ecrit%20depuis%20votre%20site%20web"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="hidden lg:flex items-center gap-3">
+                <Button>
+                  <Phone className="h-4 w-4" />
+                  Nous Contacter
+                </Button>
+              </div>
+            </a>
+
             {/* Mobile Menu Button */}
             <div className="flex items-center gap-2 lg:hidden">
               <button
@@ -184,14 +197,21 @@ const Header = () => {
                   </Link>
                 ),
               )}
-              <div className="pt-4 mt-4 border-t border-border/50 space-y-3">
-                <Button className="w-full">
-                  <Phone className="h-4 w-4" />
-                  Nous Contacter
-                </Button>
-              </div>
+              <a
+                href="https://wa.me/22892522029?text=salut%20je%20vous%20ecrit%20depuis%20votre%20site%20web"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="pt-4 mt-4 border-t border-border/50 space-y-3">
+                  <Button className="w-full">
+                    <Phone className="h-4 w-4" />
+                    Nous Contacter
+                  </Button>
+                </div>
+              </a>
+
               <div className="pt-4 text-sm text-muted-foreground space-y-2">
-                <a href="tel:+33123456789" className="flex items-center gap-2">
+                <a href="tel:+22892522029" className="flex items-center gap-2">
                   <Phone className="h-4 w-4" />
                   +228 92 52 20 29
                 </a>
