@@ -4,27 +4,27 @@ import { Badge } from "@/components/ui/badge";
 interface ProductCardProps {
   name: string;
   description: string;
-  price: string;
+  price: string | number;
   unit: string;
   image: string;
   category?: string;
   badge?: string;
 }
 
-const ProductCard = ({ 
-  name, 
-  description, 
-  price, 
-  unit, 
-  image, 
+const ProductCard = ({
+  name,
+  description,
+  price,
+  unit,
+  image,
   category,
-  badge
+  badge,
 }: ProductCardProps) => {
   return (
     <Card className="group overflow-hidden hover:shadow-xl transition-all duration-300 border-border/50 bg-card">
       <div className="relative aspect-square overflow-hidden">
-        <img 
-          src={image} 
+        <img
+          src={image}
           alt={name}
           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
           loading="lazy"
@@ -32,7 +32,9 @@ const ProductCard = ({
         {/* Badge */}
         {badge && (
           <div className="absolute top-3 left-3">
-            <Badge className="bg-primary text-primary-foreground">{badge}</Badge>
+            <Badge className="bg-primary text-primary-foreground">
+              {badge}
+            </Badge>
           </div>
         )}
       </div>
@@ -49,7 +51,7 @@ const ProductCard = ({
           {description}
         </p>
         <div className="flex items-baseline gap-2 mt-4">
-          <span className="text-xl font-bold text-primary">{price}€</span>
+          <span className="text-xl font-bold text-primary">{price}FCFA</span>
           <span className="text-sm text-muted-foreground">/ {unit}</span>
         </div>
       </CardContent>

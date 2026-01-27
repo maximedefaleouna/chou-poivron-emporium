@@ -56,14 +56,146 @@ import greenPeppersImg from "@/assets/green-peppers.jpg";
 import orangePeppersImg from "@/assets/mines/img10.png";
 import miniPeppersImg from "@/assets/mines/img11.jpg";
 
+// const allProducts = [
+//   // Choux
+//   {
+//     id: 1,
+//     name: "Chou Vert Bio",
+//     description:
+//       "Chou vert classique cultivé sans pesticides, idéal pour les potées traditionnelles et les salades croquantes.",
+//     price: "2.50",
+//     unit: "pièce",
+//     image: cabbageImg,
+//     category: "Choux",
+//     badge: "Populaire",
+//   },
+//   {
+//     id: 2,
+//     name: "Chou Rouge Bio",
+//     description:
+//       "Magnifique chou rouge aux reflets violets, parfait pour les salades colorées et la choucroute maison.",
+//     price: "2.90",
+//     unit: "pièce",
+//     image: redCabbageImg,
+//     category: "Choux",
+//   },
+//   {
+//     id: 3,
+//     name: "Chou de Milan",
+//     description:
+//       "Chou frisé aux feuilles gaufrées, texture tendre et saveur douce. Excellent braisé ou en potée.",
+//     price: "3.20",
+//     unit: "pièce",
+//     image: savoyCabbageImg,
+//     category: "Choux",
+//     badge: "Nouveau",
+//   },
+//   {
+//     id: 4,
+//     name: "Chou Chinois (Napa)",
+//     description:
+//       "Chou allongé aux feuilles tendres, incontournable pour les plats asiatiques et les woks.",
+//     price: "3.50",
+//     unit: "pièce",
+//     image: napaCabbageImg,
+//     category: "Choux",
+//   },
+//   {
+//     id: 5,
+//     name: "Chou Blanc Bio",
+//     description:
+//       "Chou blanc traditionnel, parfait pour la choucroute, les salades ou les potées d'hiver.",
+//     price: "2.20",
+//     unit: "pièce",
+//     image: whiteCabbageImg,
+//     category: "Choux",
+//   },
+//   {
+//     id: 6,
+//     name: "Choux de Bruxelles",
+//     description:
+//       "Mini-choux savoureux, délicieux rôtis au four ou sautés avec des lardons.",
+//     price: "4.90",
+//     unit: "kg",
+//     image: brusselsSproutsImg,
+//     category: "Choux",
+//     badge: "Premium",
+//   },
+//   // Poivrons
+//   {
+//     id: 7,
+//     name: "Poivrons Multicolores",
+//     description:
+//       "Assortiment de poivrons rouges, jaunes et verts, croquants et sucrés. Parfaits pour toutes vos recettes.",
+//     price: "4.90",
+//     unit: "kg",
+//     image: greenPeppersImg,
+//     category: "Poivrons",
+//     badge: "Best-seller",
+//   },
+//   {
+//     id: 8,
+//     name: "Poivrons Rouges Bio",
+//     description:
+//       "Poivrons rouges mûrs à point, les plus sucrés de tous. Excellents grillés ou farcis.",
+//     price: "5.50",
+//     unit: "kg",
+//     image: redPeppersImg,
+//     category: "Poivrons",
+//     badge: "Populaire",
+//   },
+//   {
+//     id: 9,
+//     name: "Poivrons Jaunes Bio",
+//     description:
+//       "Poivrons jaunes soleil, doux et juteux. Apportent couleur et saveur à vos plats.",
+//     price: "5.50",
+//     unit: "kg",
+//     image: greenChoux,
+//     category: "Choux",
+//   },
+//   {
+//     id: 10,
+//     name: "Poivrons Verts Bio",
+//     description:
+//       "Poivrons verts croquants au goût légèrement herbacé. Parfaits pour les sautés et les farcis.",
+//     price: "4.50",
+//     unit: "kg",
+//     image: yellowPeppersImg,
+//     category: "Poivrons",
+//   },
+//   {
+//     id: 11,
+//     name: "Poivrons Orange Bio",
+//     description:
+//       "Poivrons orange sucrés et fruités, excellents crus en apéritif ou dans les salades.",
+//     price: "5.90",
+//     unit: "kg",
+//     image: orangePeppersImg,
+//     category: "Poivrons",
+//     badge: "Nouveau",
+//   },
+//   {
+//     id: 12,
+//     name: "Mini Poivrons Sucrés",
+//     description:
+//       "Petits poivrons multicolores extra-sucrés, parfaits pour l'apéritif ou les enfants.",
+//     price: "6.90",
+//     unit: "kg",
+//     image: miniPeppersImg,
+//     category: "Poivrons",
+//     badge: "Premium",
+//   },
+// ];
+
 const allProducts = [
   // Choux
   {
     id: 1,
-    name: "Chou Vert Bio",
+    name: "Chou Vert Frais",
     description:
-      "Chou vert classique cultivé sans pesticides, idéal pour les potées traditionnelles et les salades croquantes.",
-    price: "2.50",
+      "Chou vert frais et croquant, idéal pour les sauces, potées et plats traditionnels.",
+    price: 500,
     unit: "pièce",
     image: cabbageImg,
     category: "Choux",
@@ -71,20 +203,20 @@ const allProducts = [
   },
   {
     id: 2,
-    name: "Chou Rouge Bio",
+    name: "Chou Vert Local",
     description:
-      "Magnifique chou rouge aux reflets violets, parfait pour les salades colorées et la choucroute maison.",
-    price: "2.90",
+      "Chou vert cultivé localement, très apprécié pour sa fraîcheur et son goût naturel.",
+    price: 450,
     unit: "pièce",
     image: redCabbageImg,
     category: "Choux",
   },
   {
     id: 3,
-    name: "Chou de Milan",
+    name: "Chou Vert Frisé",
     description:
-      "Chou frisé aux feuilles gaufrées, texture tendre et saveur douce. Excellent braisé ou en potée.",
-    price: "3.20",
+      "Chou vert aux feuilles frisées, tendre après cuisson, parfait pour les sauces.",
+    price: 600,
     unit: "pièce",
     image: savoyCabbageImg,
     category: "Choux",
@@ -92,42 +224,43 @@ const allProducts = [
   },
   {
     id: 4,
-    name: "Chou Chinois (Napa)",
+    name: "Chou Vert Grand Format",
     description:
-      "Chou allongé aux feuilles tendres, incontournable pour les plats asiatiques et les woks.",
-    price: "3.50",
+      "Gros chou vert, économique et idéal pour les familles et restaurants.",
+    price: 550,
     unit: "pièce",
     image: napaCabbageImg,
     category: "Choux",
   },
   {
     id: 5,
-    name: "Chou Blanc Bio",
+    name: "Chou Vert Classique",
     description:
-      "Chou blanc traditionnel, parfait pour la choucroute, les salades ou les potées d'hiver.",
-    price: "2.20",
+      "Chou vert classique, polyvalent pour toutes les recettes du quotidien.",
+    price: 400,
     unit: "pièce",
     image: whiteCabbageImg,
     category: "Choux",
   },
   {
     id: 6,
-    name: "Choux de Bruxelles",
+    name: "Chou Vert Découpé",
     description:
-      "Mini-choux savoureux, délicieux rôtis au four ou sautés avec des lardons.",
-    price: "4.90",
+      "Chou vert frais découpé, prêt à être cuisiné pour gagner du temps.",
+    price: 500,
     unit: "kg",
     image: brusselsSproutsImg,
     category: "Choux",
-    badge: "Premium",
+    badge: "Jolie",
   },
+
   // Poivrons
   {
     id: 7,
-    name: "Poivrons Multicolores",
+    name: "Poivron Vert Frais",
     description:
-      "Assortiment de poivrons rouges, jaunes et verts, croquants et sucrés. Parfaits pour toutes vos recettes.",
-    price: "4.90",
+      "Poivron vert croquant et parfumé, parfait pour les sauces et les sautés.",
+    price: 500,
     unit: "kg",
     image: greenPeppersImg,
     category: "Poivrons",
@@ -135,10 +268,9 @@ const allProducts = [
   },
   {
     id: 8,
-    name: "Poivrons Rouges Bio",
-    description:
-      "Poivrons rouges mûrs à point, les plus sucrés de tous. Excellents grillés ou farcis.",
-    price: "5.50",
+    name: "Poivron Vert Local",
+    description: "Poivron vert cultivé localement, goût intense et très frais.",
+    price: 450,
     unit: "kg",
     image: redPeppersImg,
     category: "Poivrons",
@@ -146,30 +278,29 @@ const allProducts = [
   },
   {
     id: 9,
-    name: "Poivrons Jaunes Bio",
+    name: "Poivron Vert Sélection",
     description:
-      "Poivrons jaunes soleil, doux et juteux. Apportent couleur et saveur à vos plats.",
-    price: "5.50",
+      "Poivrons verts sélectionnés pour leur qualité et leur fermeté.",
+    price: 550,
     unit: "kg",
     image: greenChoux,
     category: "Choux",
   },
   {
     id: 10,
-    name: "Poivrons Verts Bio",
+    name: "Poivron Vert Classique",
     description:
-      "Poivrons verts croquants au goût légèrement herbacé. Parfaits pour les sautés et les farcis.",
-    price: "4.50",
+      "Poivron vert classique, idéal pour les plats sautés et les sauces.",
+    price: 400,
     unit: "kg",
     image: yellowPeppersImg,
     category: "Poivrons",
   },
   {
     id: 11,
-    name: "Poivrons Orange Bio",
-    description:
-      "Poivrons orange sucrés et fruités, excellents crus en apéritif ou dans les salades.",
-    price: "5.90",
+    name: "Poivron Vert Gros",
+    description: "Poivrons verts de grande taille, excellents pour farcir.",
+    price: 600,
     unit: "kg",
     image: orangePeppersImg,
     category: "Poivrons",
@@ -177,16 +308,16 @@ const allProducts = [
   },
   {
     id: 12,
-    name: "Mini Poivrons Sucrés",
+    name: "Poivron Vert Petit",
     description:
-      "Petits poivrons multicolores extra-sucrés, parfaits pour l'apéritif ou les enfants.",
-    price: "6.90",
+      "Petits poivrons verts tendres, faciles à cuisiner et très savoureux.",
+    price: 450,
     unit: "kg",
     image: miniPeppersImg,
     category: "Poivrons",
-    badge: "Premium",
   },
 ];
+
 const categories = ["Tous", "Choux", "Poivrons"];
 
 const Produits = () => {
