@@ -41,7 +41,7 @@ const HeroSection = () => {
           <Button
             variant="outline"
             size="lg"
-            className="gap-2 text-lg px-8 py-6 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
+            className="gap-2 text-lg px-8 py-6 border-primary-foreground/30 text-primary-foreground bg-primary-foreground/10"
           >
             En savoir plus
           </Button>
