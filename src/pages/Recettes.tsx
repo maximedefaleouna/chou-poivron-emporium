@@ -173,7 +173,7 @@ const Recettes = () => {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute top-3 left-3">
-                      <Badge variant="secondary">{recipe.category}</Badge>
+                      {/* <Badge variant="secondary">{recipe.category}</Badge> */}
                     </div>
                     <div className="absolute top-3 right-3">
                       <Badge

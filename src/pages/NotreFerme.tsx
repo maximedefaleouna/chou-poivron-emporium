@@ -327,15 +327,17 @@ const NotreFerme = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      <main className="flex-1 pt-16 md:pt-28">
-        {/* Hero */}
-        <div className="relative h-[50vh] md:h-[60vh] overflow-hidden">
-          <img
-            src={heroImg}
-            alt="Nos champs de légumes"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-foreground/60 flex items-center justify-center">
+      <main className="flex-1 ">
+        <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+          {/* Background Image */}
+          <div
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: `url(${heroImg})` }}
+          >
+            <div className="absolute inset-0 bg-foreground/60" />
+          </div>
+
+          <div className="absolute inset-0  flex items-center justify-center">
             <div className="text-center text-background px-4">
               <h1 className="text-4xl md:text-6xl font-serif font-bold mb-4">
                 Notre Aventure
@@ -346,7 +348,7 @@ const NotreFerme = () => {
               </p>
             </div>
           </div>
-        </div>
+        </section>
 
         {/* Story */}
         <section className="py-16 md:py-24">
