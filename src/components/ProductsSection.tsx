@@ -240,13 +240,13 @@ const products = [
   },
   {
     id: 9,
-    name: "Poivron Vert Sélection",
+    name: "Chou Vert Sélection",
     description:
-      "Poivrons verts sélectionnés pour leur qualité et leur fermeté.",
+      "Chou vert croquant, sélectionné pour sa fraîcheur et sa qualité supérieure, idéal pour vos salades ou plats cuisinés.",
     price: 550,
     unit: "kg",
     image: greenChoux,
-    category: "Choux",
+    category: "choux",
   },
   {
     id: 10,

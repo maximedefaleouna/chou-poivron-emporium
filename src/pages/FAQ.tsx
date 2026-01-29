@@ -15,79 +15,62 @@ const faqCategories = [
     questions: [
       {
         question: "Comment passer une commande ?",
-        answer: "Vous pouvez commander directement sur notre site en ajoutant les produits à votre panier. Le paiement est sécurisé et vous recevez une confirmation par email."
-      },
-      {
-        question: "Quels sont les délais de livraison ?",
-        answer: "Nous livrons en 24 à 48h selon votre zone géographique. Les légumes sont récoltés le matin et expédiés le jour même."
+        answer:
+          "Vous pouvez consulter nos produits sur le site, puis nous contacter directement. Les livraisons commencent à partir d'un achat de 500 F.",
       },
       {
         question: "La livraison est-elle gratuite ?",
-        answer: "Oui, la livraison est gratuite pour toute commande supérieure à 50€. En dessous, les frais de port sont de 5,90€."
+        answer:
+          "La livraison est gratuite pour toute commande supérieure à 5000 F. En dessous de ce montant, les frais de port sont appliqués à partir de 500 F.",
       },
       {
         question: "Dans quelles zones livrez-vous ?",
-        answer: "Nous livrons dans toute la France métropolitaine. Pour les DOM-TOM, contactez-nous pour plus d'informations."
-      }
-    ]
+        answer:
+          "Nous livrons partout à Kara et nous effectuons des expéditions partout ailleurs.",
+      },
+    ],
   },
   {
     title: "Produits & Qualité",
     questions: [
       {
         question: "Vos légumes sont-ils vraiment bio ?",
-        answer: "Oui, notre ferme est certifiée Agriculture Biologique (AB) et Ecocert. Tous nos légumes sont cultivés sans pesticides ni engrais chimiques."
+        answer:
+          "Oui, notre ferme est strictement basée sur des cultures Bio pour préserver la santé de nos clients. Tous nos légumes sont cultivés sans pesticides ni engrais chimiques.",
       },
       {
-        question: "Comment conservez-vous la fraîcheur des légumes ?",
-        answer: "Les légumes sont récoltés le matin, triés et emballés dans des caisses isothermes avec des packs de froid pour garantir leur fraîcheur."
+        question: "Quelle est la philosophie de la ferme ?",
+        answer:
+          "Derrière cette ferme, il y a avant tout des personnes, de la passion, de la volonté et le désir de proposer des produits sains.",
       },
-      {
-        question: "Que faire si je reçois des produits abîmés ?",
-        answer: "Contactez-nous dans les 24h avec une photo. Nous vous rembourserons ou renverrons les produits concernés gratuitement."
-      },
-      {
-        question: "Comment sont choisis les légumes des paniers ?",
-        answer: "Les paniers sont composés selon les récoltes du jour. Vous pouvez préciser vos préférences ou allergies lors de la commande."
-      }
-    ]
+    ],
   },
   {
     title: "Paiement & Remboursement",
     questions: [
       {
         question: "Quels moyens de paiement acceptez-vous ?",
-        answer: "Nous acceptons les cartes bancaires (Visa, Mastercard), PayPal, et le virement bancaire. Tous les paiements sont sécurisés."
+        answer:
+          "Nous acceptons les paiements en cash (espèces) ainsi que via  Flooz, Mixx by yas et Flooz.",
       },
       {
-        question: "Puis-je annuler ma commande ?",
-        answer: "Vous pouvez annuler votre commande jusqu'à 18h la veille de l'expédition. Contactez-nous par email ou téléphone."
+        question: "Que faire si je souhaite un remboursement ?",
+        answer:
+          "Nous gérons les remboursements avec soin. Contactez-nous directement pour discuter des modalités selon votre situation.",
       },
-      {
-        question: "Comment fonctionne le remboursement ?",
-        answer: "Les remboursements sont effectués sous 5 à 7 jours ouvrés sur le même moyen de paiement utilisé lors de la commande."
-      }
-    ]
+    ],
   },
   {
     title: "La Ferme & Visites",
     questions: [
       {
-        question: "Peut-on visiter la ferme ?",
-        answer: "Oui ! Nous organisons des visites guidées tous les samedis de 10h à 12h. Réservez sur notre page Contact."
-      },
-      {
-        question: "Proposez-vous des ateliers ?",
-        answer: "Nous organisons régulièrement des ateliers cuisine et jardinage. Consultez notre page Blog pour les prochaines dates."
-      },
-      {
         question: "Où êtes-vous situés ?",
-        answer: "Notre ferme est située à 123 Route de la Ferme, 75000 Paris. Accès facile en voiture ou en transports en commun."
-      }
-    ]
-  }
+        answer:
+          "Nous sommes situés à Kara, dans la région de la Kara, plus précisément à Sanda Kagbanda, dans la préfecture de Bassar.",
+      },
+    ],
+  },
 ];
-
 const FAQ = () => {
   return (
     <div className="min-h-screen flex flex-col">
@@ -100,7 +83,8 @@ const FAQ = () => {
               Foire aux Questions
             </h1>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Trouvez les réponses à toutes vos questions sur nos produits, livraisons et services.
+              Trouvez les réponses à toutes vos questions sur nos produits,
+              livraisons et services.
             </p>
           </div>
         </div>
@@ -115,8 +99,8 @@ const FAQ = () => {
                 </h2>
                 <Accordion type="single" collapsible className="space-y-2">
                   {category.questions.map((item, index) => (
-                    <AccordionItem 
-                      key={index} 
+                    <AccordionItem
+                      key={index}
                       value={`${category.title}-${index}`}
                       className="border rounded-lg px-4"
                     >

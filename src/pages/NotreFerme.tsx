@@ -353,27 +353,30 @@ const NotreFerme = () => {
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <span className="text-primary font-medium">Notre Histoire</span>
+                <span className="text-primary font-medium">
+                  Notre Engagement
+                </span>
                 <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mt-2 mb-6">
-                  Une histoire qui commence
+                  Au service du goût
                 </h2>
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                    Tout a commencé par une passion partagée pour la terre et le
-                    goût des bons légumes. Fatigués de ne pas trouver de
-                    produits vraiment frais et locaux, nous avons décidé de
-                    créer notre propre maraîchage.
+                    Notre activité repose sur un circuit direct : de notre ferme
+                    à votre table. Nous produisons à Kara pour garantir une
+                    fraîcheur maximale et une disponibilité rapide de nos
+                    produits.
                   </p>
                   <p>
-                    Pas d'histoire familiale centenaire, pas d'équipe nombreuse.
-                    Juste une conviction : on peut cultiver des légumes
-                    délicieux en respectant la nature, sans complications.
+                    Nous avons mis en place un système simple pour nos clients :
+                    des commandes accessibles dès 500 F et une logistique qui
+                    couvre toute la ville de Kara ainsi que des expéditions
+                    régulières.
                   </p>
                   <p>
-                    Aujourd'hui, nous cultivons plusieurs variétés de légumes
-                    avec soin, en agriculture biologique. Chaque jour, nous
-                    apprenons et nous améliorons, guidés par le plaisir de vous
-                    offrir le meilleur.
+                    Le sérieux et la réactivité sont nos priorités. Que ce soit
+                    pour le paiement par Mobile Money ou la livraison à
+                    domicile, nous faisons en sorte que l'accès à nos produits
+                    soit le plus fluide possible.
                   </p>
                 </div>
                 <Button asChild className="mt-6">
@@ -504,7 +507,7 @@ const NotreFerme = () => {
                 <Card className="border-0 bg-card">
                   <CardContent className="p-6">
                     <h3 className="font-serif font-bold text-foreground text-xl mb-4">
-                      Un Projet Humain
+                      Projet humain
                     </h3>
                     <div className="flex items-start gap-4">
                       <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
@@ -512,15 +515,13 @@ const NotreFerme = () => {
                       </div>
                       <div>
                         <p className="text-muted-foreground mb-3">
-                          Derrière cette ferme, il y a avant tout des personnes
-                          passionnées. Un ami agriculteur qui connaît chaque
-                          plante, et moi qui m'occupe de vous apporter ses
-                          récoltes dans les meilleures conditions.
+                          Derrière cette ferme, il y a avant tout des personnes,
+                          la passion, la volonté et le désir.
                         </p>
                         <p className="text-muted-foreground">
-                          Cette complémentarité nous permet de vous offrir le
-                          meilleur des deux mondes : l'expertise du cultivateur
-                          et la rigueur du service.
+                          Nous travaillons chaque jour pour produire des légumes
+                          de qualité en mettant tout notre cœur dans ce que nous
+                          cultivons.
                         </p>
                       </div>
                     </div>

@@ -278,13 +278,13 @@ const allProducts = [
   },
   {
     id: 9,
-    name: "Poivron Vert Sélection",
+    name: "Chou Vert Sélection",
     description:
-      "Poivrons verts sélectionnés pour leur qualité et leur fermeté.",
+      "Chou vert croquant, sélectionné pour sa fraîcheur et sa qualité supérieure, idéal pour vos salades ou plats cuisinés.",
     price: 550,
     unit: "kg",
     image: greenChoux,
-    category: "Choux",
+    category: "choux",
   },
   {
     id: 10,
@@ -342,11 +342,12 @@ const Produits = () => {
         <div className="bg-primary/10 py-12 md:py-16">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-3xl md:text-5xl font-serif font-bold text-foreground mb-4">
-              Nos Choux & Poivrons
+              Nos Produits
             </h1>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Spécialistes depuis 35 ans, nous cultivons les meilleurs choux et
-              poivrons bio de la région. Une réputation d'excellence.
+              Derrière notre ferme, il y a avant tout de la passion et de la
+              volonté. Nous produisons nos légumes naturellement pour vous
+              offrir des produits sains et frais.
             </p>
           </div>
         </div>

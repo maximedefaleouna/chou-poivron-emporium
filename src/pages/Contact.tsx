@@ -37,9 +37,13 @@ const Contact = () => {
                       <Phone className="h-6 w-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-foreground">Téléphone</h3>
-                      <p className="text-muted-foreground">01 23 45 67 89</p>
-                      <p className="text-sm text-muted-foreground mt-1">Du lundi au vendredi, 9h-18h</p>
+                      <h3 className="font-semibold text-foreground">
+                        Téléphone
+                      </h3>
+                      <p className="text-muted-foreground">+228 92 52 20 29</p>
+                      <p className="text-sm text-muted-foreground mt-1">
+                        Du lundi au vendredi, 9h-18h
+                      </p>
                     </div>
                   </CardContent>
                 </Card>
@@ -50,8 +54,12 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground">Email</h3>
-                      <p className="text-muted-foreground">contact@legumes-frais.fr</p>
-                      <p className="text-sm text-muted-foreground mt-1">Réponse sous 24h</p>
+                      <p className="text-muted-foreground">
+                        shalomtagba@gmail.com
+                      </p>
+                      <p className="text-sm text-muted-foreground mt-1">
+                        Réponse sous 24h
+                      </p>
                     </div>
                   </CardContent>
                 </Card>
@@ -62,8 +70,8 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground">Adresse</h3>
-                      <p className="text-muted-foreground">123 Route de la Ferme</p>
-                      <p className="text-muted-foreground">75000 Paris, France</p>
+                      <p className="text-muted-foreground">123 Tchanadè</p>
+                      <p className="text-muted-foreground">31000 Kara, Togo</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -73,9 +81,15 @@ const Contact = () => {
                       <Clock className="h-6 w-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-foreground">Horaires d'ouverture</h3>
-                      <p className="text-muted-foreground">Lundi - Vendredi : 9h - 18h</p>
-                      <p className="text-muted-foreground">Samedi : 9h - 13h (visites)</p>
+                      <h3 className="font-semibold text-foreground">
+                        Horaires d'ouverture
+                      </h3>
+                      <p className="text-muted-foreground">
+                        Lundi - Vendredi : 9h - 18h
+                      </p>
+                      <p className="text-muted-foreground">
+                        Samedi : 9h - 13h (visites)
+                      </p>
                       <p className="text-muted-foreground">Dimanche : Fermé</p>
                     </div>
                   </CardContent>
@@ -93,43 +107,78 @@ const Contact = () => {
                   <form className="space-y-6">
                     <div className="grid sm:grid-cols-2 gap-4">
                       <div className="space-y-2">
-                        <label htmlFor="firstName" className="text-sm font-medium text-foreground">
+                        <label
+                          htmlFor="firstName"
+                          className="text-sm font-medium text-foreground"
+                        >
                           Prénom *
                         </label>
-                        <Input id="firstName" placeholder="Votre prénom" required />
+                        <Input
+                          id="firstName"
+                          placeholder="Votre prénom"
+                          required
+                        />
                       </div>
                       <div className="space-y-2">
-                        <label htmlFor="lastName" className="text-sm font-medium text-foreground">
+                        <label
+                          htmlFor="lastName"
+                          className="text-sm font-medium text-foreground"
+                        >
                           Nom *
                         </label>
                         <Input id="lastName" placeholder="Votre nom" required />
                       </div>
                     </div>
                     <div className="space-y-2">
-                      <label htmlFor="email" className="text-sm font-medium text-foreground">
+                      <label
+                        htmlFor="email"
+                        className="text-sm font-medium text-foreground"
+                      >
                         Email *
                       </label>
-                      <Input id="email" type="email" placeholder="votre@email.com" required />
+                      <Input
+                        id="email"
+                        type="email"
+                        placeholder="votre@email.com"
+                        required
+                      />
                     </div>
                     <div className="space-y-2">
-                      <label htmlFor="phone" className="text-sm font-medium text-foreground">
+                      <label
+                        htmlFor="phone"
+                        className="text-sm font-medium text-foreground"
+                      >
                         Téléphone
                       </label>
-                      <Input id="phone" type="tel" placeholder="01 23 45 67 89" />
+                      <Input
+                        id="phone"
+                        type="tel"
+                        placeholder="+228 __ __ __ __"
+                      />
                     </div>
                     <div className="space-y-2">
-                      <label htmlFor="subject" className="text-sm font-medium text-foreground">
+                      <label
+                        htmlFor="subject"
+                        className="text-sm font-medium text-foreground"
+                      >
                         Sujet *
                       </label>
-                      <Input id="subject" placeholder="Objet de votre message" required />
+                      <Input
+                        id="subject"
+                        placeholder="Objet de votre message"
+                        required
+                      />
                     </div>
                     <div className="space-y-2">
-                      <label htmlFor="message" className="text-sm font-medium text-foreground">
+                      <label
+                        htmlFor="message"
+                        className="text-sm font-medium text-foreground"
+                      >
                         Message *
                       </label>
-                      <Textarea 
-                        id="message" 
-                        placeholder="Votre message..." 
+                      <Textarea
+                        id="message"
+                        placeholder="Votre message..."
                         rows={5}
                         required
                       />
@@ -151,14 +200,14 @@ const Contact = () => {
             </h2>
             <div className="aspect-video rounded-2xl overflow-hidden bg-accent">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937595!2d2.292292615509614!3d48.85837007928746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1642345678901!5m2!1sfr!2sfr"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.6980718283965!2d1.1862501750031757!3d9.027188888950956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x102e42e1e10819b9%3A0xdf2d2e979304d53c!2sKara%2C%20Togo!5e0!3m2!1sfr!2sfr!4v1700000000000!5m2!1sfr!2sfr"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Notre localisation"
+                title="Notre localisation à Kara, Togo"
               />
             </div>
           </div>
