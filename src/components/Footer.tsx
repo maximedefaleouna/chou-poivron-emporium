@@ -173,6 +173,16 @@ const Footer = () => {
             <p>© 2026 Légumes Frais. Tous droits réservés. Kara Togo.</p>
             <div className="flex items-center gap-4">
               <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVBITcryDatFEe68GqrSIaNiUNvxa08sxZkg&s"
+                alt="Moov"
+                className="h-6 opacity-70"
+              />
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLRd9-5ZZKfEdBrxOFnft2RspU5JhGhki6xw&s"
+                alt="Yas"
+                className="h-6 opacity-70"
+              />
+              <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/80px-Visa_Inc._logo.svg.png"
                 alt="Visa"
                 className="h-6 opacity-70"
@@ -182,7 +192,6 @@ const Footer = () => {
                 alt="Mastercard"
                 className="h-6 opacity-70"
               />
-              <span className="text-background/50">🔒 Paiement sécurisé</span>
             </div>
           </div>
         </div>

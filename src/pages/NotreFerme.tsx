@@ -15,7 +15,7 @@ import {
   Clock,
   MapPin,
 } from "lucide-react";
-import heroImg from "@/assets/mines/img8.jpeg";
+import heroImg from "@/assets/mines/ferme.jpg";
 import { Link } from "react-router-dom";
 
 const values = [
@@ -77,7 +77,7 @@ const NotreFerme = () => {
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{ backgroundImage: `url(${heroImg})` }}
           >
-            <div className="absolute inset-0 bg-foreground/60" />
+            <div className="absolute inset-0 bg-foreground/40" />
           </div>
 
           <div className="absolute inset-0  flex items-center justify-center">
